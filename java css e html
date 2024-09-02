@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .fundo{
+            background-image: linear-gradient(45deg, black, blueviolet);
+            height: 100vh;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .calculadora{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            
+        }
+        .botao{
+            color: white;
+            background-color: rgb(31,31,31);
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            margin: 4px;
+            border-radius: 10px;
+        }
+
+        .botao:hover{
+            background-color: black;
+
+        }
+
+        #resultado {
+            background-color: white;
+            border-radius: 10px;
+            margin: 5px;
+            height: 30px;
+            color:black;
+            text-align: right;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fundo">  
+        <h1> Minha Calculadora HTML, CSS e JS</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><-</button></td>
+                    <td><button class="botao">+</button></td>
+                    <td><button class="botao">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">7</button></td>
+                    <td><button class="botao">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">3</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">1</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 114px;" >=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style=" width: 113px;">0</button></td>
+                    <td><button class="botao">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
